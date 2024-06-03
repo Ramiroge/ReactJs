@@ -1,0 +1,14 @@
+.CardItem {
+    border: 1px solid;
+    border-color: black;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.ItemHeader{
+    word-wrap: break-word;
+}
+
+.ItemImg {
+    width: 350px;
+}
