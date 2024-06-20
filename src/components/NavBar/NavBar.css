@@ -1,0 +1,33 @@
+.NavBar{
+    padding: 20px 0;
+    background-color: black;
+}
+
+.GetReal {
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.Categorias {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.NavBar .Option {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.NavBar .ActiveOption {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}

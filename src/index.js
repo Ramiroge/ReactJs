@@ -6,17 +6,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBsG6oec4wCzeQulW3EHWNTJHZKTuIx85I",
-  authDomain: "reactjs-ramirogonzalez.firebaseapp.com",
-  projectId: "reactjs-ramirogonzalez",
-  storageBucket: "reactjs-ramirogonzalez.appspot.com",
-  messagingSenderId: "1033249916047",
-  appId: "1:1033249916047:web:4ea12fa2a0855d1bd89cfa"
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBsG6oec4wCzeQulW3EHWNTJHZKTuIx85I",
+//   authDomain: "reactjs-ramirogonzalez.firebaseapp.com",
+//   projectId: "reactjs-ramirogonzalez",
+//   storageBucket: "reactjs-ramirogonzalez.appspot.com",
+//   messagingSenderId: "1033249916047",
+//   appId: "1:1033249916047:web:4ea12fa2a0855d1bd89cfa"
+// };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+// const app = initializeApp(firebaseConfig);
+// const db = getFirestore(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
