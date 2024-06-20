@@ -4,7 +4,7 @@ const products = [
         cacao: "40%", 
         leche: "Leche Tradicional", 
         imagen: "https://acdn.mitiendanube.com/stores/003/236/931/products/chocolate-con-leche21-ce255c0e584758ec4816899752187190-1024-1024.webp", 
-        categoria: "Con Leche", 
+        categoria: "Tradicionales", 
         precio: "2000", 
         stock: "25", 
         id: "LAT"
@@ -14,7 +14,7 @@ const products = [
         cacao: "30%", 
         leche: "Leche Tradicional", 
         imagen: "https://acdn.mitiendanube.com/stores/003/236/931/products/chocolate-blanco-con-vainilla-natural21-b290518d96e888c0a816899751055748-640-0.webp", 
-        categoria: "Con Leche", 
+        categoria: "Tradicionales", 
         precio: "2100", 
         stock: "25", 
         id: "BLA"
@@ -88,4 +88,21 @@ export const getProducts = () => {
             resolve(products)
         }, 500)
     })
+}
+
+export const getProductById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id ===productId))
+        },500)
+    })
+}
+
+export const getProductsByCategory = (productCat) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const filteredProducts = products.filter(prod => prod.categoria === productCat);
+            resolve(filteredProducts);
+        }, 500);
+    });
 }
